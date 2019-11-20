@@ -1,0 +1,55 @@
+.c_month_selector{
+    position: relative;
+    width: fit-content;
+}
+
+.c_month_selector-content{
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    background: lightgray;
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.c_month_selector-content-active{
+    display: flex;
+}
+
+.c_month_selector-content::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -20px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid lightgray;
+}
+
+.c_month_selector-item{
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+
+.c_month_selector-item input{
+    margin: 0;
+    margin-right: 10px;
+}
+
+
+/* ==========><>|c_popup-wrapper|<><========== */
+
+.c_popup-wrapper{
+    position: relative;
+    width: fit-content;
+}
